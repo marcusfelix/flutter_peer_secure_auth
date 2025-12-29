@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:cryptography/cryptography.dart';
+
 import 'public_identity.dart';
 
 /// Manages the set of trusted peers.
@@ -22,15 +22,7 @@ class TrustStore {
 
     if (jsonMap.containsKey('peers')) {
       final peersList = jsonMap['peers'] as List;
-      for (final peerJson in peersList) {
-        // We need to wait for async static method?
-        // PublicIdentity.fromJson is async because of key parsing.
-        // Constructors can't be async.
-        // We should probably change PublicIdentity.fromJson to be sync if possible
-        // OR make this factory async static method.
-        // But `SimplePublicKey` constructor is synchronous in `cryptography` package if bytes are known.
-        // Let's check PublicIdentity.fromJson again.
-
+      if (peersList.isNotEmpty) {
         throw UnimplementedError("Use fromSerializedAsync instead");
       }
     }

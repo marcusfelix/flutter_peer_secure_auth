@@ -1,5 +1,5 @@
 /// A pure Dart package for cryptographic identity and end-to-end encryption.
-library dart_e2ee_p2p;
+library flutter_peer_secure_auth;
 
 export 'src/identity_keys.dart';
 export 'src/public_identity.dart';

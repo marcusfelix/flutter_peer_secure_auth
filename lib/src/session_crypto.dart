@@ -4,7 +4,6 @@ import 'package:cryptography/cryptography.dart';
 import 'encrypted_payload.dart';
 import 'identity_keys.dart';
 import 'public_identity.dart';
-import 'trust_store.dart';
 
 /// Handles encryption and decryption for a specific peer-to-peer session.
 class SessionCrypto {

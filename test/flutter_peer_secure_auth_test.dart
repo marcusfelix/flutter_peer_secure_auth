@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:dart_e2ee_p2p/dart_e2ee_p2p.dart';
+import 'package:flutter_peer_secure_auth/flutter_peer_secure_auth.dart';
 
 void main() {
   group('IdentityKeys', () {
